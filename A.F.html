@@ -1,0 +1,938 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	Registration Form - ClassXI
+</title>
+    <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="FormXI.js"></script>
+    <style type="text/css">
+        .style2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .style3 {
+            height: 63px;
+        }
+
+        .playschool {
+        }
+
+        #chkUnder {
+            width: 17px;
+            height: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form name="frmOnlineAdmission" method="Post" action="FormXI.aspx" id="frmOnlineAdmission" enctype="multipart/form-data">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTI4MzAzODgxMw9kFgICAQ9kFgYCDw8QZBAVAgAHR0VORVJBTBUCAAdHRU5FUkFMFCsDAmdnZGQCEQ8QDxYGHg1EYXRhVGV4dEZpZWxkBQlDbGFzc05hbWUeDkRhdGFWYWx1ZUZpZWxkBQlDbGFzc05hbWUeC18hRGF0YUJvdW5kZ2QQFQIILVNlbGVjdC0IQ2xhc3MgWEkVAgEwCENsYXNzIFhJFCsDAmdnZGQCIw8QDxYGHwAFCFJlbGlnaW9uHwEFClJlbGlnaW9uSWQfAmdkEBUUAAVCYWhhaQhCdWRkaGlzbQlDSFJJU1RJQU4MQ2hyaXN0aWFuaXR5DENvbmZ1Y2lhbmlzbQVISU5EVQhIaW5kdWlzbQVJc2xhbQRKQUlOB0phaW5pc20HSnVkYWlzbQZNVVNMSU0FT3RoZXIGU2hpbnRvBFNJS0gHU2lraGlzbQVTSUtLSAZUYW9pc20OWm9yb2FzdHJpYW5pc20VFAACMTABNQIxNgEyATcCMTQBNAEzAjE1AjExATECMTcCMTMBOAIxOAE2AjE5ATkCMTIUKwMUZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WHAUKY2hrU2NpZW5jZQUHQ2hrQ29tbQUHY2hrSHVtYQUJcmRsUENNMSQwBQlyZGxQQ00xJDEFCXJkbFBDTTEkMQUJcmRsUENNMiQwBQlyZGxQQ00yJDEFCXJkbFBDTTIkMgUJcmRsUENNMiQzBQlyZGxQQ00yJDMFDGNoa0NvbW1TdWIkMAUMY2hrQ29tbVN1YiQxBQxjaGtDb21tU3ViJDIFDGNoa0NvbW1TdWIkMwUMY2hrQ29tbVN1YiQ0BQxjaGtDb21tU3ViJDUFDGNoa0NvbW1TdWIkNQUMcmRsSHVtbVNVYiQwBQxyZGxIdW1tU1ViJDEFDHJkbEh1bW1TVWIkMgUMcmRsSHVtbVNVYiQzBQxyZGxIdW1tU1ViJDQFDHJkbEh1bW1TVWIkNQUMcmRsSHVtbVNVYiQ1BQxjaGtHaXJsQ2hpbGQFDmNoa1NpbmdsZUNoaWxkBQhjaGtVbmRlci/8ZhhgtmnuahJdJguKpByqy6Li" />
+</div>
+
+<script type="text/javascript" src="/ajax/common.ashx"></script><script type="text/javascript" src="/ajax/ProgramFiles_OnlineAdmission_FormXI,App_Web_vsjr8jgj.ashx"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8F6D28F2" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEW8wEC1M/44A4CoKa66wUCi9jt6gEC8OvGgQECz+CG5Q8C3b2eWwK95OSTDgK95KCKDwL2oZjMCQLV59+LCwK93MDNDwLw1//aBwKywoj3DQLhwrjpDQLgwrjpDQLjwrjpDQLiwrjpDQLlwrjpDQLkwrjpDQLnwrjpDQL2wrjpDQL5wrjpDQLhwvjqDQLhwvTqDQLhwvDqDQLhwszqDQLhwsjqDQLhwsTqDQLhwsDqDQLhwtzqDQLhwpjpDQLhwpTpDQLgwvjqDQLgwvTqDQLgwvDqDQLgwszqDQLgwsjqDQLgwsTqDQLgwsDqDQLgwtzqDQLgwpjpDQLgwpTpDQLjwvjqDQLjwvTqDQLit6O1DgKRt/OoDgKRt/eoDgKRt8uoDgKRt8+oDgKRt8OoDgKRt8eoDgKRt9uoDgKRt5+rDgKRt5OrDgKOt/+oDgKOt/OoDgKOt/eoDgKdlZmlAwLFgvT6AQLFguiRCQLFgpy1DgLFgrDoBwLFgqSPDwLFgtiiBALFgszZDQLFguD8AgLFgtTFBwLFgsj4DAKB4aGOCQKB4dWlDgKB4cnYBwKB4f3/DAKB4ZGTBAKB4YW2DQKB4bntAgKB4a2ACgKB4YHpDAKB4bWMBALq2IeVAwLq2LvICALq2K/vAQLq2MOCCQLq2Pe5DgLq2OvcBwLq2J/wDALq2LOXBALq2Of/BgKH5PizDQKL6o29CgKKutu1DALG2pbtBALl+saJCQLGvIHOCwKIldj5BQKIlZz5BQK584vQBQKyh/XvAwK5jbHsBAL7+9LpDgLb4p+cCAL46MWFCQL3h6/oBQLzh+/rBQL3h5foBQL2h+/rBQLxh+/rBQL3h5/oBQL0h+/rBQL1h+/rBQL3h5PoBQL3h6PoBQL3h+/rBQL3h4voBQL3h5voBQLgh+/rBQL3h8/rBQLyh+/rBQL3h8PrBQLvh+/rBQL3h6foBQKK88SADwKf88SADwKf88ieDwL9nO7uAwKz6cTNBgKm6cTNBgKm6cjTBgLEhu6jCgLF1MnRCgKu+5LoDwLJm5DqDQLIgv3BBwLAqZPXDgKekNWXAwLV7MPIAwLU7MPIAwKEseqIBQKDseqIBQKGseqIBQKFseqIBQL0l+NeAvSX97kJAvSXu6gPAvSXz4MIAvSXk/INAvSXp80GAvTzrdUMAvTzmfoDAvTzhZ8LAvTz8cMCAvTz/cEPAvTz6eYGAtXS35EFAoGO9oQDArnVxqQNAoWu+IYEAvq9qIcEAoCRp6AIAu+ErdAMApLuuPINAsSi6swNAsy23OEJAsLC+M0EArKRwv8IArCx+IYEAo/+tY0DArHBqIcEAoCRs8MDAtryrdAMAveus+QKAvml6swNAsyc69QLAumG4pIKAtDfxO4EAo6IkZ4HAoTEjIwEAvmJ+bgCAoGGrfAKAtqU9e4PAtq+pYAEAtq+rYAEAuS+pYAEAuS+rYAEAuW+pYAEAuW+rYAEAuPX2r0HApnlnssDAtus9KALAv/H0o0JAsfYg+UEAvi2x7gIAveejZ8OAveesZkDAo3hto0KAqnk9NMDAsnF4oANApHE3aALAsTT+OEIAvTdvscMAvyn870DArSjyJoNAqr99MUHApyc/MEJAp7vlZQIAoXvkekKAvTPpK4EAviK0/UOAoS+j+APApC1pOkCAtDHlKoBArKousUNAsO6ov0NApPloasBAtf1j6UDAoK4rboKAsXUqqQGAsSExJcNAufOjyUCxNSqpAYCxITY8gUCzOXxjwYCw9SqpAYCxITszQ4C7vSmtA8CroaW9wwCzOm4GALu3sarDgKtmI6FDAL237DoDQKP6L3ACgKP6Nm+CgKChLLIBQKChP7dBAKamd6SBwLD2YD5BwLKpPbjBgLz5JjKBwLO54KoBQLO5869BAKNy4KaDAK3692GDwLtjuX2DgK2vvCPDM4AisyTRnQKbQPfLQIXy1BSfKui" />
+</div>
+        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right">
+                        <input type="hidden" name="picnam" id="picnam" />
+                        <span id="lbl"></span>
+                        <input type="submit" name="btnUploadImage" value="Upload Photo" onclick="return openWindow('');" id="btnUploadImage" title="Please affix Child Photograph here" style="font-size:8pt;width:20%;" />
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right">
+                        <label>
+                            
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="style2">
+                        <div align="center">
+                            CANDIDATE INFORMATION   
+                        </div>
+
+                        <div id="divFRM">
+                            <table style="width: 100%;">
+                                <tr>
+                                    
+                                    <td style="text-align: right;">
+                                        <span style="text-align: right; padding-right: 5px;">Form No:<input name="txtFormNo" type="text" id="txtFormNo" />
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div align="center">
+                            <font color="Red">Note:* Mandatory Field, Fill NA for Not Applicable </font>
+                        </div>
+                    </td>
+                </tr>
+                <tr bgcolor="#d1edce">
+                    <td colspan="3" align="left" nowrap="nowrap" valign="top">
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top" width="26%">First Name<font color="red">*</font>
+                    </td>
+                    <td nowrap="nowrap" valign="top" width="30%">Middle Name
+                    </td>
+                    <td nowrap="nowrap" valign="top" width="44%">Last Name
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top" width="26%">
+                        <input name="stuFName" type="text" maxlength="20" id="stuFName" onChange="ValidText(this)" />
+                    </td>
+                    <td nowrap="nowrap" valign="top" width="30%">
+                        <input name="stuMNAME" type="text" maxlength="20" id="stuMNAME" onChange="ValidText(this)" />
+                    </td>
+                    <td nowrap="nowrap" valign="top" width="44%">
+                        <input name="stuLNAME" type="text" maxlength="20" id="stuLNAME" onChange="ValidText(this)" />
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Registration Category:<font color="red">*</font>
+                    </td>
+                    <td>
+                        <select name="stucatg" id="stucatg">
+	<option value=""></option>
+	<option value="GENERAL">GENERAL</option>
+
+</select>
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Class<font color="red">*</font>
+                    </td>
+                    <td>
+                        <select name="stuclass" id="stuclass">
+	<option value="0">-Select-</option>
+	<option value="Class XI">Class XI</option>
+
+</select>
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Date Of Birth<font color="red">*</font>
+                    </td>
+                    <td colspan="1" nowrap="nowrap" valign="top">
+                        <select name="dobdate" id="dobdate">
+	<option value="DD">DD</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+
+</select>
+                        <select name="dobmonth" id="dobmonth">
+	<option value="MM">MM</option>
+	<option value="01">01</option>
+	<option value="02">02</option>
+	<option value="03">03</option>
+	<option value="04">04</option>
+	<option value="05">05</option>
+	<option value="06">06</option>
+	<option value="07">07</option>
+	<option value="08">08</option>
+	<option value="09">09</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+
+</select>
+                        <select name="dobyear" id="dobyear" onchange="calage();">
+	<option value="YYYY">YYYY</option>
+	<option value="1990">1990</option>
+	<option value="1991">1991</option>
+	<option value="1992">1992</option>
+	<option value="1993">1993</option>
+	<option value="1994">1994</option>
+	<option value="1995">1995</option>
+	<option value="1996">1996</option>
+	<option value="1997">1997</option>
+	<option value="1998">1998</option>
+	<option value="1999">1999</option>
+	<option value="2000">2000</option>
+	<option value="2001">2001</option>
+	<option value="2002">2002</option>
+	<option value="2003">2003</option>
+	<option value="2004">2004</option>
+	<option value="2005">2005</option>
+	<option value="2006">2006</option>
+	<option value="2007">2007</option>
+	<option value="2008">2008</option>
+	<option value="2009">2009</option>
+	<option value="2010">2010</option>
+	<option value="2011">2011</option>
+	<option value="2012">2012</option>
+	<option value="2013">2013</option>
+	<option value="2014">2014</option>
+	<option value="2015">2015</option>
+	<option value="2016">2016</option>
+	<option value="2017">2017</option>
+	<option value="2018">2018</option>
+
+</select>
+                        &nbsp;&nbsp;<span id="birdate"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Age
+                        of the Student:<font color="red">*</font>
+                        
+                        <input name="stuage" type="text" id="stuage" style="width: 30px;" readonly="readonly" maxlength="30" />
+                    </td>
+                    <td>Upload Date of Birth Certificate
+                        <input type="file" name="ufAgeProof" id="ufAgeProof" />
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">&nbsp;Gender<font color="red">*</font> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <select name="stuGender" id="stuGender" class="stuGender">
+	<option value=""></option>
+	<option value="Male">Male</option>
+	<option value="Female">Female</option>
+
+</select>
+                    </td>
+                    <td colspan="2" nowrap="nowrap" valign="top">Caste-Category<font color="red">*</font>&nbsp;&nbsp;
+                        <select name="caste_cat" id="caste_cat">
+	<option value=""></option>
+	<option value="GENERAL">GENERAL</option>
+	<option value="SC">SC</option>
+	<option value="ST">ST</option>
+	<option value="OBC">OBC</option>
+	<option value="OTHER">OTHER</option>
+
+</select>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minority:<font
+                            color="red">*</font>
+                        <select name="stuminority" id="stuminority">
+	<option value=""></option>
+	<option value="YES">YES</option>
+	<option value="NO">NO</option>
+
+</select>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Religion:<font color="red">*</font>
+                        <select name="ddlreligion" id="ddlreligion">
+	<option value=""></option>
+	<option value="10">Bahai</option>
+	<option value="5">Buddhism</option>
+	<option value="16">CHRISTIAN</option>
+	<option value="2">Christianity</option>
+	<option value="7">Confucianism</option>
+	<option value="14">HINDU</option>
+	<option value="4">Hinduism</option>
+	<option value="3">Islam</option>
+	<option value="15">JAIN</option>
+	<option value="11">Jainism</option>
+	<option value="1">Judaism</option>
+	<option value="17">MUSLIM</option>
+	<option value="13">Other</option>
+	<option value="8">Shinto</option>
+	<option value="18">SIKH</option>
+	<option value="6">Sikhism</option>
+	<option value="19">SIKKH</option>
+	<option value="9">Taoism</option>
+	<option value="12">Zoroastrianism</option>
+
+</select>
+                    </td>
+                </tr>
+
+                
+
+                
+
+                
+                <tr bgcolor="#d1edce">
+                    <td colspan="3" align="center" nowrap="nowrap" valign="top">
+                        <div align="left">
+                            <b>2.&nbsp;Father's Information <span style="color: red; font-weight: normal;">(Fill
+                                either father or mother email id for confirmation mail)</span></b>&nbsp;
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top" width="26%">Father's Name<font color="red">*</font>
+                    </td>
+                    <td colspan="2" valign="top">
+                        <input name="FatherName" type="text" maxlength="50" id="FatherName" onChange="ValidText(this)" style="width:246px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Father's Qualification
+                    </td>
+                    <td valign="top" width="30%">
+                        <input name="FQualif" type="text" maxlength="50" id="FQualif" style="width:246px;" />
+                    </td>
+                    <td valign="top" width="44%">
+                        <!--input type="text" name="txtFQualification" id="txtFQualification" size=35 maxlength=200  value="Fill Qualification according to your choice"-->
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Father's Email<font color="red">*</font>
+                    </td>
+                    <td colspan="2" valign="top">
+                        <input name="FMail" type="text" maxlength="50" id="FMail" onChange="javascript:checkEmail(this)" style="width:246px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Father's Mobile Number<font color="red">*</font>
+                    </td>
+                    <td colspan="2" valign="top">
+                        <input name="Fmobile" type="text" maxlength="10" id="Fmobile" Onblur="javascript:intOnly(this)" onkeypress="javascript:intOnly(this)" OnChange="javascript:intOnly(this);MobilNumber(this)" style="width:246px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Father's Annual Income
+                    </td>
+                    <td colspan="2" valign="top">
+                        <input name="Fincome" type="text" maxlength="11" id="Fincome" style="width:246px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Father's Aadhar Number
+                    </td>
+                    <td colspan="2" valign="top">
+                        <input name="txtFAadharNo" type="text" maxlength="12" id="txtFAadharNo" style="width:246px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center" nowrap="nowrap" valign="top">
+                        <table bordercolor="#FFFFCC" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td valign="top" width="100%">
+                                        <table align="center" border="1" bordercolor="#FFFFCC" cellpadding="0" cellspacing="0"
+                                            width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" nowrap="nowrap" valign="top" width="10%">&nbsp;
+                                                    </td>
+                                                    <td wrap="" align="center" valign="top" width="20%">Designation
+                                                    </td>
+                                                    <td wrap="" align="center" valign="top" width="20%">Organisation Name
+                                                    </td>
+                                                    <td wrap="" align="center" valign="top" width="20%">Phone No.
+                                                    </td>
+                                                    <td wrap="" align="center" valign="top" width="30%">Organisation Address
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" nowrap="nowrap" valign="top" width="10%">Father Occupation
+                                                    </td>
+                                                    <td align="center" nowrap="nowrap" valign="top" width="20%">
+                                                        <input name="FDesignation" type="text" maxlength="50" id="FDesignation" onChange="ValidText(this)" />
+                                                    </td>
+                                                    <td align="center" nowrap="nowrap" valign="top" width="20%">
+                                                        <input name="FOrganisationName" type="text" maxlength="50" id="FOrganisationName" />
+                                                    </td>
+                                                    <td align="center" nowrap="nowrap" valign="top" width="20%">
+                                                        <input name="FPhone" type="text" maxlength="15" id="FPhone" Onblur="javascript:intOnly(this)" onkeypress="javascript:intOnly(this)" OnChange="javascript:intOnly(this);" />
+                                                    </td>
+                                                    <td align="center" nowrap="nowrap" valign="top" width="20%">
+                                                        <input name="FOrgAddress" type="text" maxlength="200" id="FOrgAddress" style="width:350px;" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr bgcolor="#d1edce">
+                    <td colspan="3" align="center" nowrap="nowrap" valign="top">
+                        <div align="left">
+                            <b>3.&nbsp;Mother's Information <span style="color: red; font-weight: normal;">(Fill
+                                either father or mother email id for confirmation mail)</span></b>&nbsp;
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Mother's Name<font color="red">*</font>
+                    </td>
+                    <td colspan="2" valign="top">
+                        <input name="MotherName" type="text" maxlength="50" id="MotherName" onChange="ValidText(this)" style="width:246px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Mother's Qualification
+                    </td>
+                    <td valign="top" width="30%">
+                        <input name="MQualifi" type="text" maxlength="50" id="MQualifi" style="width:246px;" />
+                    </td>
+                    <td valign="top" width="44%">
+                        <!--input type="text" name="txtMQualification" id="txtMQualification" size=40 maxlength=200 value="Fill Qualification according to your choice"-->
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Mother's Mobile Number
+                    </td>
+                    <td colspan="2" valign="top">
+                        <input name="Mmobile" type="text" maxlength="10" id="Mmobile" Onblur="javascript:intOnly(this)" onkeypress="javascript:intOnly(this)" OnChange="javascript:intOnly(this);MobilNumber(this)" style="width:246px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Mother's Email
+                    </td>
+                    <td colspan="2" valign="top">
+                        <input name="MotherMail" type="text" maxlength="50" id="MotherMail" onChange="javascript:checkEmail(this)" style="width:246px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Mother's Annual Income
+                    </td>
+                    <td colspan="2" valign="top">
+                        <input name="Mincome" type="text" maxlength="11" id="Mincome" style="width:246px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Mother's Aadhar Number
+                    </td>
+                    <td colspan="2" valign="top">
+                        <input name="txtMAadharNo" type="text" maxlength="12" id="txtMAadharNo" style="width:246px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center" nowrap="nowrap" valign="top">
+                        <table bordercolor="#FFFFCC" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td valign="top" width="100%">
+                                        <table align="center" border="1" bordercolor="#FFFFCC" cellpadding="0" cellspacing="0"
+                                            width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" nowrap="nowrap" valign="top" width="10%">&nbsp;
+                                                    </td>
+                                                    <td wrap="" align="center" valign="top" width="20%">Designation
+                                                    </td>
+                                                    <td wrap="" align="center" valign="top" width="20%">Organisation Name
+                                                    </td>
+                                                    <td wrap="" align="center" valign="top" width="20%">Phone No.
+                                                    </td>
+                                                    <td wrap="" align="center" valign="top" width="30%">Organisation Address
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" nowrap="nowrap" valign="top" width="10%">Mother Occupation
+                                                    </td>
+                                                    <td align="center" nowrap="nowrap" valign="top" width="20%">
+                                                        <input name="MDesignation" type="text" maxlength="50" id="MDesignation" onChange="ValidText(this)" />
+                                                    </td>
+                                                    <td align="center" nowrap="nowrap" valign="top" width="20%">
+                                                        <input name="MOrgNm" type="text" maxlength="50" id="MOrgNm" />
+                                                    </td>
+                                                    <td align="center" nowrap="nowrap" valign="top" width="20%">
+                                                        <input name="MPhone" type="text" maxlength="15" id="MPhone" Onblur="javascript:intOnly(this)" onkeypress="javascript:intOnly(this)" OnChange="javascript:intOnly(this);" />
+                                                    </td>
+                                                    <td align="center" nowrap="nowrap" valign="top" width="20%">
+                                                        <input name="MOrgAdd" type="text" maxlength="200" id="MOrgAdd" style="width:350px;" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr bgcolor="#d1edce">
+                    <td colspan="3" align="center" nowrap="nowrap" valign="top">
+                        <div align="left">
+                            <b>4.&nbsp;Address Information</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center" nowrap="nowrap" valign="top">
+                        <table bordercolor="#FFFFCC" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" valign="top" width="100%">
+                                        <table border="1" bordercolor="#FFFFCC" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="4" align="center" nowrap="nowrap" valign="top">Residential Address<font color="red">*</font>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4" align="center" valign="top">&nbsp;
+                                                        <textarea name="ResidentialAdd" rows="2" cols="20" id="ResidentialAdd" onkeyup="countChar(this)" style="height:75px;width:550px;"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4" align="left" valign="top">
+                                                        <table align="center" border="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td colspan="2" align="center" valign="top">City<font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;<input name="txtCity" type="text" id="txtCity" onChange="ValidText(this)" style="vertical-align: top;" />
+                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    </td>
+                                                                    <td>State<font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;<input name="txtState" type="text" id="txtState" onChange="ValidText(this)" style="vertical-align: top;" />
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4" align="center" valign="top">
+                                                        <table align="center" border="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td colspan="2" align="center" valign="top">Pin Code<font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                        <input name="PinCode" type="text" maxlength="6" id="PinCode" title="Enter Numeric" Onblur="javascript:intOnly(this)" OnChange="javascript:intOnly(this);" class="pincode" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;" />
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td colspan="2" align="center" valign="top">Mobile No<font color="red">*</font><!--Contact Phone No[s]-->
+                                                                        <input name="residen_PhNum" type="text" maxlength="10" id="residen_PhNum" title="Enter Numeric" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;" />
+                                                                    </td>
+                                                                    <td colspan="2" align="center" valign="top">Email-ID<font color="red">*</font>&nbsp;
+                                                                        <input name="emrgencyPhNm" type="text" maxlength="15" id="emrgencyPhNm" title="Enter Numeric" onkeypress="return IsNumeric(event);" ondrop="return false;" onpaste="return false;" style="width:192px;" />
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr bgcolor="#d1edce">
+                    <td colspan="3" align="center" nowrap="nowrap" valign="top">
+                        <div align="left">
+                            <b>5.Medical Information </b>&nbsp;
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Blood Group<span id="bldgrp" style="color: red;">*</span>
+                    </td>
+                    <td colspan="2" valign="top">
+                        
+                        <select name="bloodgrp" id="bloodgrp">
+	<option value="-Select-">-Select-</option>
+	<option value="O-">O-</option>
+	<option value="O+">O+</option>
+	<option value="A-">A-</option>
+	<option value="A+">A+</option>
+	<option value="B-">B-</option>
+	<option value="B+">B+</option>
+	<option value="AB-">AB-</option>
+	<option value="AB+">AB+</option>
+
+</select>
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Immunization Status<font color="red">*</font>
+                    </td>
+                    
+                    <td valign="top" width="30%">
+                        <p>
+                            <select name="immun_status" id="immun_status">
+	<option value="-Select-">-Select-</option>
+	<option value="BCG">BCG</option>
+	<option value="OPV">OPV</option>
+	<option value="DPT">DPT</option>
+	<option value="Booster of OPV">Booster of OPV</option>
+	<option value="Booster of DPT">Booster of DPT</option>
+	<option value="Measles">Measles</option>
+	<option value="MMR">MMR</option>
+	<option value="Typhoid">Typhoid</option>
+	<option value="Hepatitis- B">Hepatitis- B</option>
+	<option value="Any other">Any other</option>
+
+</select>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="file" name="ufimmun" id="ufimmun" />
+                            <input name="txt_immune" type="text" maxlength="100" id="txt_immune" style="display: none" />
+                    </td>
+                    <td valign="top" width="44%">
+                        <!--input type="text" name="txtMQualification" id="txtMQualification" size=40 maxlength=200 value="Fill Qualification according to your choice"-->
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Allergies to Medicine and Food<font color="red">*</font>
+                    </td>
+                    <td colspan="2" valign="top">
+                        <textarea name="allergytxtarea" rows="2" cols="20" id="allergytxtarea" onkeyup="countChar(this)" style="height:75px;width:550px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td nowrap="nowrap" valign="top">Birth History Complication/ History of major illness, if any <font color="red">*</font>
+                    </td>
+                    <td colspan="2" valign="top">
+                        <textarea name="complica_area" rows="2" cols="20" id="complica_area" onkeyup="countChar(this)" style="height:80px;width:550px;"></textarea>
+                    </td>
+                </tr>
+                
+               
+                
+                
+                
+                
+                <br />
+            </tbody>
+        
+</table>
+            </td>
+            <td style="width: 100%;" colspan=4" align="center">
+                <span style="display: none;">Upload Documents &nbsp;&nbsp;&nbsp;&nbsp;<input type="file" name="ufDoc" id="ufDoc" Multiple="Multiple" /></span>
+                <table style="width:100%;">
+                    <tr>
+                        <td  style="width:50%;">Upload Address Proof <font color="red">*</font>&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" name="ufAddressProof" id="ufAddressProof" Multiple="Multiple" /><br />
+                        </td>
+                       
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+        
+
+        <tr>
+            <td colspan="3" align="center" nowrap="nowrap" valign="top">
+                <table bordercolor="#FFFFCC" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                        <tr class="T1" style="display: none">
+                            <td align="center" nowrap="nowrap" valign="top" width="40%">
+                                
+                                If yes, enter Sibling School Admission Number                                
+
+                            </td>
+                            <td>Admn No.&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Class &amp; Sec&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp; Name
+                            </td>
+                        </tr>
+                        <tr class="T1" style="display: none">
+                            <td align="center" nowrap="nowrap" valign="top" width="40%">&nbsp;
+                            </td>
+                            <td colspan="2" nowrap="nowrap" valign="top" width="60%">
+                                <input name="adm_no0" type="text" maxlength="7" id="adm_no0" onblur="javascript:SN_onBlur(this.value,0)" class="sibling" style="width:110px;" />
+                                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input name="txtclass0" type="text" id="txtclass0" onkeydown="return false;" class="sibling" style="width:140px;" />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input name="txtname0" type="text" id="txtname0" onkeydown="return false;" class="sibling" style="width:110px;" />
+                            </td>
+                        </tr>
+                        <tr class="T1" style="display: none">
+                            <td align="center" nowrap="nowrap" valign="top">&nbsp;
+                            </td>
+                            <td colspan="2" nowrap="nowrap" valign="top">
+                                <input name="adm_no1" type="text" maxlength="7" id="adm_no1" onblur="javascript:SN_onBlur(this.value,1)" class="sibling" style="width:110px;" />
+                                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input name="txtclass1" type="text" id="txtclass1" onkeydown="return false;" class="sibling" style="width:140px;" />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input name="txtname1" type="text" id="txtname1" onkeydown="return false;" class="sibling" style="width:110px;" />
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr class="T1" style="display: none">
+                            <td align="center" nowrap="nowrap" valign="top" width="40%">&nbsp;
+                            </td>
+                            <td colspan="2" nowrap="nowrap" valign="top" width="60%">
+                                <input name="adm_no2" type="text" maxlength="7" id="adm_no2" onblur="javascript:SN_onBlur(this.value,2)" class="sibling" style="width:110px;" />
+                                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input name="txtclass2" type="text" id="txtclass2" onkeydown="return false;" class="sibling" style="width:140px;" />
+                                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;
+                                <input name="txtname2" type="text" id="txtname2" onkeydown="return false;" class="sibling" style="width:110px;" />
+                            </td>
+                        </tr>
+                </table>
+            </td>
+        </tr>
+        </table> </td> </tr>
+       
+        &nbsp;</td> </tr>
+       
+    
+
+        <input name="txtProfessionCodeWeightage" id="txtProfessionCodeWeightage" value="0"
+            type="hidden">
+        <tr>
+            <td colspan="3" align="center" nowrap="nowrap" valign="top">
+                <table cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                        <tr>
+                            <td colspan="2" valign="top" width="100%">
+                                <table align="center" border="1" bordercolor="#FFFFCC" cellpadding="0" cellspacing="0"
+                                    width="100%">
+                                    <tbody>
+                                        <tr style="display: none;">
+                                            <td align="left" nowrap="nowrap" valign="top" width="40%">Is Parent Alumni<font color="red">*</font>
+                                            </td>
+                                            <td colspan="2" nowrap="nowrap" valign="top" width="60%">
+                                                <table id="Alumni" border="0">
+	<tr>
+		<td><input id="Alumni_0" type="radio" name="Alumni" value="Yes" /><label for="Alumni_0">Yes</label></td><td><input id="Alumni_1" type="radio" name="Alumni" value="No" checked="checked" /><label for="Alumni_1">No</label></td>
+	</tr>
+</table>
+                                                &nbsp;&nbsp;
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td align="left" nowrap="nowrap" valign="top" width="40%">
+                                                <input name="txtAlumniWeightage" id="txtAlumniWeightage" value="0" type="hidden">
+                                            </td>
+                                            <td colspan="2" nowrap="nowrap" valign="top" width="60%">
+                                                <input name="txtalumni" type="text" maxlength="100" id="txtalumni" style="display: none" />
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+        
+      
+
+        
+       
+
+                       
+
+                        
+
+                       
+
+                        
+
+                        
+                    </table>
+                </div>
+            </td>
+        </tr>
+        
+       
+        <tr>
+           
+        </tr>
+        <tr>
+            <td colspan="3" align="center" nowrap="nowrap" valign="top">&nbsp;<input name="txtTotalWeightage" id="txtTotalWeightage" value="0" type="hidden">
+            </td>
+        </tr>
+        
+                
+    </form>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+    $(function () {
+        $('#txtAdmNo').blur(function () {
+            var RollNo = $('#txtAdmNo').val();
+            if (RollNo != '') {
+                var admno = ProgramFiles_OnlineAdmission_FormXI.CheckAdm(RollNo);                
+                if (admno != '') {
+                    if (admno.value == 'N') {
+                        alert('Invalid Admission No');
+                        $('#txtAdmNo').val('');
+                        $('#hidBVMStd').html(admno.value);
+                        return false;
+                    } else {                        
+                        $('#hidBVMStd').html(admno.value);
+                    }
+                }
+            }
+        });
+    });
+    function calage() {
+        $("#birdate").html("");
+        $('#birdate').val('');
+        var curday = 31;
+        var curmon = 3;
+        var curyear = 2020;
+        var calday = $('#dobdate').find(":selected").val();
+        var calmon = $('#dobmonth').find(":selected").val();
+        var calyear = $('#dobyear').find(":selected").val();
+
+
+        if (curday == "" || curmon == "" || curyear == "" || calday == "" || calmon == "" || calyear == "") {
+            alert("Please fill all the values and click go ");
+            $('#registerbtn').show();
+        } else if (curday == calday && curmon == calmon && curyear == calyear) {
+            alert("Today your birthday & Your age is 0 years old");
+            $('#registerbtn').show();
+        } else {
+            if (parseFloat(calyear) > parseFloat(curyear)) {
+                alert("Enter Your date of birth year less than current year");
+                $('#registerbtn').show();
+            } else if (parseFloat(calyear) == parseFloat(curyear) && parseFloat(calmon) > parseFloat(curmon)) {
+                alert("Enter Your date of birth month less than current month");
+                $('#registerbtn').show();
+            } else if (parseFloat(calyear) == parseFloat(curyear) && parseFloat(calmon) == parseFloat(curmon) && parseFloat(calday) > parseFloat(curday)) {
+                alert("Enter Your date of birth date less than current date");
+                $('#registerbtn').show();
+                //result_empty();
+            } else {
+                var curd = new Date(curyear, curmon - 1, curday);
+                var cald = new Date(calyear, calmon - 1, calday);
+
+                if (cald.getMonth() != (calmon - 1)) {
+                    $("#birdate").html("<font color=red>Invalid Date</font>");
+                    $("#stuage").attr('value', '');
+                    return false;
+                } else if (curd.getMonth() != (curmon - 1)) { } else {
+                    var diff = Date.UTC(curyear, curmon - 1, curday, 0, 0, 0) - Date.UTC(calyear, calmon - 1, calday, 0, 0, 0);
+
+                    var dife = datediff(curd, cald);
+
+                    //-- apna code h ji.
+
+
+
+                    var AGE = calyear + '-' + calmon + '-' + calday;
+                    var CLS = $('#stuclass').val();
+                    var strAge = ProgramFiles_OnlineAdmission_FormXI.CheckAge(AGE, CLS);
+                    if (strAge != '') {
+                        $("#stuage").attr('value', strAge.value);
+                    } else {
+                        $("#stuage").attr('value', dife[0]);
+                    }
+
+                }
+            }
+        }
+    }
+
+
+
+
+    function openWindow(fileName) {
+        var Url = "../../Resources/CustomControl/SingleFileUpload1/otherFileuploder.aspx?fileName=" + fileName;
+        var newWindow = window.open(Url, 'ViewContribution', 'left=50,top=50,width=500,height=200,toolbars=0,resizable=1,scrollbars=yes');
+        if (newWindow) {
+            newWindow.focus()
+        }
+        else
+            alert("Please turn off your PopUp blocking software");
+
+        return false;
+    }
+
+    function SN_onBlur(val, id) {
+
+        switch (id) {
+            case 0:
+                classname = 'txtclass0';
+                chdname = 'txtname0'
+
+                break;
+
+            case 1:
+                classname = 'txtclass1';
+                chdname = 'txtname1'
+
+                break;
+            case 2:
+                classname = 'txtclass2';
+                chdname = 'txtname2'
+
+                break;
+        }
+
+        if (val != "") {
+            $.ajax({
+                type: "POST",
+                url: "ajaxreq.aspx?AdmID=" + val,
+                success: function (data) {
+                    if (data.indexOf('||') > 0) {
+                        var arrdata = data.split('||')
+
+                        $("#" + classname).val(arrdata[0]);
+                        $("#" + chdname).val(arrdata[1]);
+
+                    }
+                    else {
+                        $("#" + classname).val('');
+                        $("#" + chdname).val('');
+
+                    }
+                },
+                error: function (data) {
+                    //alert("error" + data);
+                }
+            });
+        }
+        else {
+            $("#" + classname).val('');
+            $("#" + chdname).val('');
+
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
